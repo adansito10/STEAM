@@ -1,0 +1,248 @@
+.login-wrapper {
+    display: flex;
+    min-height: calc(100vh - 60px);
+    /* Adjust for navbar */
+    background-color: white;
+}
+
+/* --- Left Side: Illustration --- */
+.illustration-side {
+    display: none;
+    /* Hidden on mobile */
+    width: 50%;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .illustration-side {
+        display: flex;
+    }
+}
+
+.illustration-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-placeholder {
+    font-size: 15rem;
+    z-index: 2;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.floating-icon {
+    position: absolute;
+    font-size: 3rem;
+    animation: float 4s ease-in-out infinite;
+}
+
+.heart-icon {
+    top: 20%;
+    left: 30%;
+    animation-delay: 0s;
+}
+
+.like-icon {
+    top: 15%;
+    right: 30%;
+    animation-delay: 1s;
+}
+
+.bulb-icon {
+    top: 40%;
+    left: 10%;
+    animation-delay: 2s;
+}
+
+.gear-icon {
+    bottom: 30%;
+    right: 20%;
+    animation-delay: 0.5s;
+    font-size: 4rem;
+    color: #f9a825;
+}
+
+.bg-circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #f0f4f8;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.tech-card {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    animation: float 5s ease-in-out infinite 1s;
+}
+
+/* --- Right Side: Form --- */
+.form-side {
+    width: 100%;
+    background-color: #0e3c50;
+    /* Dark Teal from reference */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+}
+
+@media (min-width: 900px) {
+    .form-side {
+        width: 50%;
+    }
+}
+
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.google-btn {
+    background-color: #e53935;
+    /* Red/Orange google color */
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 4px 0 #b71c1c;
+    transition: transform 0.1s;
+}
+
+.google-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #b71c1c;
+}
+
+.auth-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.tab {
+    cursor: pointer;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.tab.active {
+    color: white;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    /* Align with border-bottom */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.submit-btn {
+    background-color: white;
+    color: #0e3c50;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+    margin-bottom: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.forgot-password a {
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}

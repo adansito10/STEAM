@@ -1,0 +1,37 @@
+<div class="login-wrapper">
+  <div class="illustration-side">
+    
+  </div>
+
+  <div class="form-side">
+    <div class="form-container">
+      <h2 class="form-title">Bienvenido de nuevo</h2>
+      <p class="form-subtitle">
+        Inicia sesión para continuar con tu test vocacional
+      </p>
+
+     
+
+      <div class="auth-tabs">
+        <span class="tab active">Ingresar</span>
+        <span class="tab" (click)="goToRegister()">Registrarse</span>
+      </div>
+
+      <form (submit)="onLogin($event)">
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Dirección de Correo" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="password" id="password" placeholder="Contraseña" required>
+        </div>
+        
+        <button type="submit" class="submit-btn">Ingresar</button>
+        
+        <div class="forgot-password">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

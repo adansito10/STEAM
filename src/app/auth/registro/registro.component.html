@@ -1,0 +1,38 @@
+<div class="login-wrapper">
+
+
+  <div class="form-side">
+    <div class="form-container">
+      <h2 class="form-title">Regístrate en Vocaciones STEAM</h2>
+      <p class="form-subtitle">
+        Crea una cuenta para guardar tus preferencias y acceder al Test de Orientación Vocacional
+      </p>
+
+
+      <div class="auth-tabs">
+        <span class="tab" (click)="goToLogin()">Ingresar</span>
+        <span class="tab active">Registrarse</span>
+      </div>
+
+      <form (submit)="onRegister($event)">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Nombre completo" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Dirección de Correo" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="password" id="password" placeholder="Contraseña" required>
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="confirmPassword" placeholder="Confirmar Contraseña" required>
+        </div>
+        
+        <button type="submit" class="submit-btn">Registrarse</button>
+      </form>
+    </div>
+  </div>
+</div>

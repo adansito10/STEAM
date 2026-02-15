@@ -1,0 +1,30 @@
+<div class="main-layout">
+  <header class="top-bar">
+    <div class="nav-brand">
+      <h3>Vocaciones</h3>
+    </div>
+
+    <button class="hamburger-btn" (click)="toggleMenu()" [class.active]="isMenuOpen" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="desktop-nav" [class.active]="isMenuOpen">
+      <a routerLink="/inicio" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Inicio</a>
+      <a routerLink="/cursos" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Cursos</a>
+      
+      <div class="mobile-login" *ngIf="isMenuOpen">
+          <button class="login-btn" (click)="goToLogin(); closeMenu()">Iniciar sesión</button>
+      </div>
+    </nav>
+
+    <div class="auth-actions desktop-only">
+      <button class="login-btn" (click)="goToLogin()">Iniciar sesión</button>
+    </div>
+  </header>
+
+  <main class="content-area">
+    <router-outlet></router-outlet>
+  </main>
+</div>
