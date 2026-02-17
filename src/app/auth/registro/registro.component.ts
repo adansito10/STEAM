@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './registro.component.html',
-  styleUrls: ['./registro.component.css']
+  styleUrl: './registro.component.css'
 })
 export class RegistroComponent {
 

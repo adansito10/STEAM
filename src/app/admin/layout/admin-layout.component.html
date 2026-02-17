@@ -1,0 +1,24 @@
+<div class="admin-container">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>Vocaciones Admin</h2>
+    </div>
+    <nav class="sidebar-nav">
+      <a routerLink="usuarios" routerLinkActive="active" class="nav-item">
+        <i class="fas fa-users"></i> Usuarios
+      </a>
+      <a routerLink="universidades" routerLinkActive="active" class="nav-item">
+        <i class="fas fa-university"></i> Universidades
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <button (click)="logout()" class="logout-btn">
+        <i class="fas fa-sign-out-alt"></i> Salir
+      </button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

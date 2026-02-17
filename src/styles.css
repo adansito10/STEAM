@@ -1,15 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --primary-color: #6200ee;
-    --primary-dark: #3700b3;
-    --secondary-color: #03dac6;
-    --background-color: #ffffff;
-    --surface-color: #ffffff;
-    --error-color: #b00020;
-    --text-primary: #000000;
-    --text-secondary: #666666;
-    --border-radius: 8px;
-    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Steam Blue Palette */
+    --bg-color: #e2e8f0;
+    /* Darker clean gray */
+    --bg-alt: #cbd5e1;
+    /* Distinct secondary gray */
+    --text-main: #0f172a;
+    --text-muted: #1e293b;
+    /* Darker muted text */
+    --primary-blue: #1d4ed8;
+    --primary-dark: #1e3a8a;
+    --white: #ffffff;
+
+    /* STEAM Accents */
+    --science: #059669;
+    --tech: #2563eb;
+    --eng: #d97706;
+    --arts: #7c3aed;
+    --math: #dc2626;
+
+    /* Legacy Map for existing components */
+    --primary-color: var(--primary-blue);
+    --background-color: var(--bg-color);
+    --text-primary: var(--text-main);
 }
 
 body {

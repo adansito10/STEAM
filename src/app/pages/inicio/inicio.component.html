@@ -1,3 +1,62 @@
-<div class="minimal-hero">
- 
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">Descubre tu <span class="highlight">Vocación STEAM</span></h1>
+        <p class="hero-description">
+            Hay muchas oportunidades en el mundo de la Ciencia, Tecnología, Ingeniería, Artes y Matemáticas.
+            Nuestro test identifica tu perfil y te guía hacia las carreras donde mejor encajas.
+        </p>
+        <button class="cta-button" (click)="goToCuestionario()">Comenzar Test</button>
+    </div>
 </div>
+
+<section class="steps-section">
+    <div class="container">
+        <h2 class="section-title">¿Cómo Funciona?</h2>
+        <div class="steps-grid">
+            <!-- Step 1 -->
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <h3>Responde Preguntas</h3>
+                <p>Contesta una serie de preguntas diseñadas para identificar tus intereses y aptitudes.</p>
+                <a (click)="goToCuestionario()" class="step-link">Comenzar Test</a>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <h3>Obtén Resultados</h3>
+                <p>Recibe un análisis inmediato de tu perfil vocacional y tus áreas de fortaleza.</p>
+                <a (click)="goToCuestionario()" class="step-link">Comenzar Test</a>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <h3>Explora tu Futuro</h3>
+                <p>Descubre las carreras STEAM que mejor se alinean con tu personalidad y talentos.</p>
+                <a (click)="goToCuestionario()" class="step-link">Comenzar Test</a>
+            </div>
+
+            <!-- Step 4 (Optional) -->
+            <div class="step-card optional-step">
+                <div class="step-number">04</div>
+                <h3>Profundiza (Opcional)</h3>
+                <p>Obtén un análisis detallado con IA y recomendaciones de universidades para potenciar tu elección.</p>
+                <a (click)="goToCuestionario()" class="step-link">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="final-cta-section">
+    <div class="container">
+        <h2 class="final-cta-title">Descubre el Poder de tu <span class="highlight">Futuro STEAM</span></h2>
+        <p class="final-cta-description">
+            Insights personalizados para ayudarte a entenderte mejor y alcanzar tus metas profesionales.
+        </p>
+        <button class="cta-button" (click)="goToCuestionario()">Empezar Ahora</button>
+    </div>
+    <div class="copyright">
+        © 2026 Vocaciones STEAM. Todos los derechos reservados.
+    </div>
+</section>
